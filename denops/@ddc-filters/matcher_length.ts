@@ -1,19 +1,21 @@
 import {
   BaseFilter,
-  Candidate,
+  Item,
   SourceOptions,
-} from "https://deno.land/x/ddc_vim@v0.13.0/types.ts#^";
+} from "https://deno.land/x/ddc_vim@v2.2.0/types.ts";
 
-export class Filter extends BaseFilter<{}> {
+type Params = Record<never, never>;
+
+export class Filter extends BaseFilter<Params> {
   filter(args: {
     sourceOptions: SourceOptions,
     completeStr: string,
-    candidates: Candidate[],
-  }): Promise<Candidate[]> {
-    return Promise.resolve(args.candidates.filter(
-      (candidate) => candidate.word.length > args.completeStr.length
+    items: Item[],
+  }): Promise<Item[]> {
+    return Promise.resolve(args.items.filter(
+      (item) => item.word.length > args.completeStr.length
     ));
   }
 
-  params(): {} { return {}; }
+  params(): Params { return {}; }
 }
