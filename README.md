@@ -21,8 +21,8 @@ https://github.com/Shougo/ddc.vim
 
 ```vim
 " Use both matcher_head and matcher_length.
-call ddc#custom#patch_global('sourceOptions', {
-      \ '_': {
-      \   'matchers': ['matcher_head', 'matcher_length'],
+call ddc#custom#patch_global('sourceOptions', #{
+      \   _: #{
+      \     matchers: ['matcher_head', 'matcher_length'],
       \ })
 ```
