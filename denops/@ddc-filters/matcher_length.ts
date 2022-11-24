@@ -7,7 +7,7 @@ import {
 type Params = Record<never, never>;
 
 export class Filter extends BaseFilter<Params> {
-  filter(args: {
+  override filter(args: {
     sourceOptions: SourceOptions,
     completeStr: string,
     items: Item[],
@@ -17,5 +17,5 @@ export class Filter extends BaseFilter<Params> {
     ));
   }
 
-  params(): Params { return {}; }
+  override params(): Params { return {}; }
 }
