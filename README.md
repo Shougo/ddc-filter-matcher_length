@@ -1,4 +1,4 @@
-# ddc-matcher_length
+# ddc-filter-matcher_length
 
 Length matcher for ddc.vim
 
