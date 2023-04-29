@@ -2,7 +2,7 @@
 
 Length matcher for ddc.vim
 
-It removes candidates shorter than or equal to the user input.
+It removes items shorter than or equal to the user input.
 
 
 ## Required

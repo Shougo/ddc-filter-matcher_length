@@ -14,7 +14,7 @@ Params			|ddc-filter-matcher_length-params|
 ==============================================================================
 INTRODUCTION			*ddc-filter-matcher_length-introduction*
 
-It removes candidates shorter than or equal to the user input.
+It removes items shorter than or equal to the user input.
 
 
 ==============================================================================
