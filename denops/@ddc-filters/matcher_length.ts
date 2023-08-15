@@ -2,9 +2,9 @@ import {
   BaseFilter,
   Item,
   SourceOptions,
-} from "https://deno.land/x/ddc_vim@v3.4.0/types.ts";
+} from "https://deno.land/x/ddc_vim@v4.0.4/types.ts";
 
-type Params = Record<never, never>;
+type Params = Record<string, never>;
 
 export class Filter extends BaseFilter<Params> {
   override filter(args: {
