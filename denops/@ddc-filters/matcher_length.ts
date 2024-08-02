@@ -8,14 +8,16 @@ type Params = Record<string, never>;
 
 export class Filter extends BaseFilter<Params> {
   override filter(args: {
-    sourceOptions: SourceOptions,
-    completeStr: string,
-    items: Item[],
+    sourceOptions: SourceOptions;
+    completeStr: string;
+    items: Item[];
   }): Promise<Item[]> {
     return Promise.resolve(args.items.filter(
-      (item) => item.word.length > args.completeStr.length
+      (item) => item.word.length > args.completeStr.length,
     ));
   }
 
-  override params(): Params { return {}; }
+  override params(): Params {
+    return {};
+  }
 }

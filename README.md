@@ -4,18 +4,15 @@ Length matcher for ddc.vim
 
 It removes items shorter than or equal to the user input.
 
-
 ## Required
 
 ### denops.vim
 
 https://github.com/vim-denops/denops.vim
 
-
 ### ddc.vim
 
 https://github.com/Shougo/ddc.vim
-
 
 ## Configuration
 
