@@ -1,8 +1,5 @@
-import {
-  BaseFilter,
-  type Item,
-  type SourceOptions,
-} from "jsr:@shougo/ddc-vim@6.0.0/types";
+import { type Item, type SourceOptions } from "jsr:@shougo/ddc-vim@~7.0.0/types";
+import { BaseFilter } from "jsr:@shougo/ddc-vim@~7.0.0/filter";
 
 type Params = Record<string, never>;
 
