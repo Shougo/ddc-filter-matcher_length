@@ -8,9 +8,11 @@ export class Filter extends BaseFilter<Params> {
     completeStr: string;
     items: Item[];
   }): Item[] {
-    return args.items.filter(
-      (item) => item.word.length > args.completeStr.length,
-    );
+    // `string.length` counts UTF-16 code units, not user-perceived characters.
+    // This means emoji or some combined characters may be counted differently
+    // from what users expect as "length".
+    const inputLength = args.completeStr.length;
+    return args.items.filter((item) => item.word.length > inputLength);
   }
 
   override params(): Params {
